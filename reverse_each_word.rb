@@ -1,11 +1,12 @@
 def reverse_each_word(string)
-  string = string.split('')
+  array = string.split(' ')
   
   reversed_string = []
   
-  string.each do |char|
-    reversed_string.unshift(char)
+  array.each do |element|
+    subarray = element.reverse
+    reversed_string = subarray
   end
   
-  return reversed_string.join('')
+  return reversed_string.join(' ')
 end
