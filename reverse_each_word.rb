@@ -1,9 +1,9 @@
 def reverse_each_word(string)
-  string = string.split(' ')
+  string_array = string.split(' ')
   
   reversed_string = []
   
-  string.each do |char|
+  string_array.each do |char|
     reversed_string.unshift(char)
   end
   
